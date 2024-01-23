@@ -2,17 +2,18 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
-
+    // kotlin-android-extensions -> kotlin-parcelize
+    id("kotlin-parcelize")
 }
 
 android {
     namespace = "com.kkyoungs.news"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.kkyoungs.news"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -93,10 +94,12 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
 
-    implementation("io.insert-koin:koin-core:3.5.0")
-    implementation("io.insert-koin:koin-annotations:1.3.0")
-    kapt("io.insert-koin:koin-compiler:1.3.0")
+    implementation("io.insert-koin:koin-test:3.1.6")
+    implementation("io.insert-koin:koin-androidx-viewmodel:2.2.3")
+    implementation("io.insert-koin:koin-androidx-scope:2.2.3")
+    testImplementation ("io.insert-koin:koin-test:3.1.6")
 
+    implementation ("androidx.work:work-runtime-ktx:2.9.0")
 
 
 }
