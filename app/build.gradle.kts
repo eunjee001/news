@@ -93,10 +93,11 @@ dependencies {
 
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
-
-    implementation("io.insert-koin:koin-test:3.1.6")
-    implementation("io.insert-koin:koin-androidx-viewmodel:2.2.3")
-    implementation("io.insert-koin:koin-androidx-scope:2.2.3")
+    implementation ("io.insert-koin:koin-core:3.5.0")
+//    implementation("io.insert-koin:koin-test:3.1.6")
+//    implementation("io.insert-koin:koin-androidx-viewmodel:2.2.3")
+//    implementation("io.insert-koin:koin-androidx-scope:2.2.3")
+    implementation("io.insert-koin:koin-android:3.0.2")
     testImplementation ("io.insert-koin:koin-test:3.1.6")
 
     implementation ("androidx.work:work-runtime-ktx:2.9.0")
